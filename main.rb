@@ -10,6 +10,10 @@ class StringCalculator
       input = input[4..-1]
     end
 
-    input.split(/#{delimiter}/).map(&:to_i).reduce(:+)
+    number_array = input.split(/#{delimiter}/).map(&:to_i)
+    negatives = number_array.select { |num| num < 0 }
+    raise "negative numbers not allowed #{negatives.join(', ')}" unless negatives.empty?
+
+    number_array.reduce(:+)
   end
 end
