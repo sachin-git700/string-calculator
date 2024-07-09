@@ -20,5 +20,25 @@ RSpec.describe StringCalculator do
         expect(described_class.add("1,2")).to eq(3)
       end
     end
+
+    context 'when given multiple numbers' do
+      it 'returns there sum' do
+        expect(described_class.add("1,2,3,4,5")).to eq(15)
+      end
+    end
+
+    context 'when given new line between numbers as delimiter' do
+      it 'returns there sum' do
+        expect(described_class.add("1\n2,3,4,5")).to eq(15)
+      end
+    end
+
+    context 'when given different delimiter is used' do
+      #
+    end
+
+    context 'when given negative numbers are present' do
+      #
+    end
   end
 end
