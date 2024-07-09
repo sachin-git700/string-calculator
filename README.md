@@ -17,4 +17,7 @@ A simple String Calculator project implemented in Ruby following the Test-Driven
 git clone https://github.com/sachin-git700/string-calculator.git
 cd string-calculator
 rspec spec/main_spec.rb
+
+# to run rubocop
+bundle exec rubocop
 ```
