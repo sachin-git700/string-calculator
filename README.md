@@ -9,15 +9,12 @@ A simple String Calculator project implemented in Ruby following the Test-Driven
 - Support different delimiters.
 - Raise exceptions for negative numbers, listing all negative numbers provided.
 
-## Installation
-
-1. Clone the repository:
+## Cloning the Repository, Running Tests, and Running Rubocop
 
 ```bash
 git clone https://github.com/sachin-git700/string-calculator.git
 cd string-calculator
-rspec spec/main_spec.rb
-
-# to run rubocop
+bundle install
+bundle exec rspec spec/main.rb
 bundle exec rubocop
 ```
