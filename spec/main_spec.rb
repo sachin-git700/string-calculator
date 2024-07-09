@@ -34,7 +34,9 @@ RSpec.describe StringCalculator do
     end
 
     context 'when given different delimiter is used' do
-      #
+      it 'returns there sum' do
+        expect(StringCalculator.add("//;\n1;2;3")).to eq(6)
+      end
     end
 
     context 'when given negative numbers are present' do
